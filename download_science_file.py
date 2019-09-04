@@ -18,3 +18,5 @@ r = requests.get(zip_file_url, stream=True)
 # zipfileを読み込み展開する
 z = zipfile.ZipFile(io.BytesIO(r.content))
 z.extractall()
+
+student_data_math = pd.read_csv("student-mat.csv")
